@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Home",
+    "description": "This is shell app",
+    "iconFlag": "k-i-home",
+    "path": "",
+    "layout": "KendoAppbarComponent",
+    "featureModule": "home/home"
+  },
+  {
+    "title": "Profile",
+    "iconFlag": "k-i-user",
+    "path": "profile",
+    "layout": "KendoAppbarComponent",
+    "featureModule": "profile/profile",
+    "protected": true
+  },
+  {
+    "title": "Protected",
+    "path": "protected",
+    "iconFlag": "k-i-lock",
+    "layout": "KendoAppbarComponent",
+    "featureModule": "protected/routes",
+    "protected": true
+  },
+  {
+    "title": "Remote1 application",
+    "description": "Remote app with native fedration",
+    "path": "remote",
+    "layout": "KendoDrawerComponent",
+    "remoteModule": {
+      "name": "remote1",
+      "exposes": "./remote1Module",
+      "module": "RemoteMainModule"
+    },
+    "iconFlag": "k-i-inherited"
+  },
+  {
+    "title": "Remote2 application",
+    "description": "Remote app with native fedration",
+    "path": "remote2",
+    "layout": "KendoDrawerComponent",
+    "remoteModule": {
+      "name": "remote2",
+      "exposes": "./remote2Module",
+      "module": "RemoteMainModule"
+    },
+    "iconFlag": "k-i-inherited"
+  },
+  {
+    "title": "React External Remote App",
+    "description": "External React app with shell wrapper",
+    "iconFlag": "k-i-table-position-center",
+    "path": "ext-react-app",
+    "layout": "KendoAppbarComponent",
+    "featureModule": "react-app-wrapper/react-app-wrapper"
+  }
+]

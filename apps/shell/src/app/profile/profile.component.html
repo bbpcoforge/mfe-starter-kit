@@ -1,0 +1,7 @@
+<div class="profile-card">
+  <div class="shield"></div>
+  <p>
+    You're logged in!
+    <span *ngIf="name$ | async as name"> Welcome, {{ name }} </span>
+  </p>
+</div>
